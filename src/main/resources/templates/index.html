@@ -6,5 +6,24 @@
 </head>
 <body>
 <h3>You can do it!</h3>
+This webapp is built using mvn clean package
+
+Then run using java -jar target/jarfile.jar<br>
+Also it is set to run inside a Docker container from Amazon AWS.<br>
+These are the steps:<br>
+1) IntelliJ > create code<br>
+2) Maven build jar file<br>
+3) Create Dockerfile<br>
+4) Push all to GitHub<br>
+5) Create AWS build server (Linux instance)<br>
+6) Create AWS Jenkins server (Ubuntu instance)<br>
+7) Install and configure Jenkins on 6)<br>
+8) Create Jenkins build-job:<br>
+    a) Download code from GitHub<br>
+    b) Use EB CLI (Elastic Beanstalk Command Line Interface) to setup the application (Docker)<br>
+    c) Use EB CLI to run the application<br>
+9) Create webhook, listening for GitHub commit. On commit, this will envoke the job 8)<br>
+<br>
+Jon Eikholm, KEA 2018<br>
 </body>
 </html>
