@@ -26,7 +26,7 @@ public class HomeControllerTest {
     @Test
     public void index() throws Exception{
         mockMvc.perform(get("/"))
-                .andExpect(view().name("index4"))
+                .andExpect(view().name("index"))
                 .andExpect(status().isOk());
     }
 
