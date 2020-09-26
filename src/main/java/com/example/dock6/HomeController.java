@@ -11,6 +11,7 @@ public class HomeController {
 
     //@ResponseBody
     //@RequestMapping(value = "/")
+    // some comments
     public String index(){
 
         return "index";
