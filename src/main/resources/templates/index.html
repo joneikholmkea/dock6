@@ -19,13 +19,11 @@ These are the steps:<br>
 2) Maven build jar file<br>
 3) Create Dockerfile<br>
 4) Push all to GitHub<br>
-5) Create AWS build server (Linux instance)<br>
-6) Create AWS Jenkins server (Ubuntu instance)<br>
-7) Install and configure Jenkins on 6)<br>
+5) Create AWS server (Ubuntu instance) for Docker and Jenkins<br>
+6) Install and configure Jenkins on 5)<br>
 8) Create Jenkins build-job:<br>
     a) Download code from GitHub<br>
-    b) Use EB CLI (Elastic Beanstalk Command Line Interface) to setup the application (Docker)<br>
-    c) Use EB CLI to run the application<br>
+    b) Add build steps for Maven and Docker
 9) Create webhook, listening for GitHub commit. On commit, this will envoke the job 8)<br>
 10) Start the first build: In Jenkins, select your project, and click "Build Now"<br>
 11) Enjoy some coffee.
